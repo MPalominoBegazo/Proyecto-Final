@@ -58,7 +58,7 @@ function buscar(nombre, estudiantes) {
     // Retornar el objeto del estudiante buscado
     // Nota: NO IMPORTA SI EL USUARIO ESCRIBE EL NOMBRE EN MAYÚSCULAS O MINÚSCULAS
     for(var i in estudiantes){
-        if(nombre.toLowerCase() == estudiantes[i].nombre){
+        if(nombre.toLowerCase() == estudiantes[i].nombre.toLowerCase()){
            return estudiantes[i];
         }
     }
